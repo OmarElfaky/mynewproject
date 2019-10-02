@@ -1,0 +1,83 @@
+/* style blog */
+*{
+  box-sizing: border-box;
+}
+.font-white{
+  color: white
+}
+#header{
+  z-index:-1
+}
+.content-width {
+  width: 80% !important;
+  padding: 0
+}
+
+#blog-index .blog-index-box{
+  padding: 4em 4em 2em 4em;
+  border-radius: 5px;
+  box-shadow: var(--boxShadowCard);
+  z-index: 3;
+  background-color: var(--whiteColor);
+}
+#blog-index,#Other-Posts{
+  width: 80%;
+  margin: 0 auto 4%;
+}
+#blog-index{
+margin-top: -20em
+}
+#blog-index .h2{
+  font-size: 1em;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+#blog-index .box{
+  width: 100%;
+}
+#blog-index .blog-img{
+  margin-bottom: 1em;
+  height: 350px
+}
+#blog-index .blog-text-litle{
+  font-style: italic;
+}
+#blog-index span i{
+  font-size: 1.3em;
+  margin-left: 1em;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--textColor);
+  transition: var(--transtion)
+}
+#blog-index span:hover i{
+  color: var(--mainColor)
+}
+.text-inlline{
+  display: inline-block;
+}
+/* other posts */
+#Other-Posts .box{
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 5%;
+}
+#Other-Posts  .h5{
+  color: var(--headingText);
+  transition: var(--transtion);
+  transition-delay: .1s
+}
+#Other-Posts .blog-content .blog-box .h5:hover{
+  color: var(--mainColor);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#Other-Posts .blog-content{
+  padding: 0
+}
+#Other-Posts .blog-content .blog-box{
+    box-shadow: 0px 0px 0px #ffff;
+}
+#Other-Posts .blog-content{
+  box-shadow: none
+}

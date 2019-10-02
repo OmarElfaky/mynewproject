@@ -1,0 +1,609 @@
+/* Main Css Rules  for Main Elements in The project */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+}
+section,
+header,
+nav,
+ul,
+li,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+}
+.content-width {
+    padding: 0 50px;
+    margin: auto
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    padding: 1em;
+}
+.h2 {
+    color: var(--headingText);
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 500;
+    text-transform: capitalize !important;
+    margin-top: 30px
+}
+.h3 {
+    letter-spacing: 5px;
+    color: var(--textColor);
+    margin-bottom: 40px;
+}
+.h3,
+.h4,
+.h5 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.h2,.h3,
+.h4,
+.h5,strong,a,li{
+  font-family: 'Roboto Mono',monospace;
+}
+.width-img {
+    height: 100%;
+    object-fit: cover;
+}
+strong {
+    width: 7em;
+    display: inline-block;
+}
+.under-line:hover {
+    text-decoration: underline;
+}
+.text {
+    padding: 0 0 2em 0;
+    line-height: 2.3;
+}
+.education-text-little,
+.emplpymeny-text-little,
+.blog-text-litle,
+.blog-text-little {
+    color: var(--textColor);
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    padding-bottom: 1.6em;
+}
+/*  ----------------Start Header---------------- */
+.nav-header {
+    padding: 2em 0;
+    font-weight: 600;
+    position: fixed;
+    z-index: 4;
+}
+.nav-header li {
+    padding: 0;
+    width: 9em;
+    font-size: .88em;
+}
+.nav-header li a {
+    text-decoration: none;
+}
+.nav-header li:hover a {
+    cursor: pointer;
+    transition-duration: .1s
+}
+.nav-header li:hover::after,
+#projects .inform-list li:hover::after {
+    content: ' _';
+}
+#header {
+    height: 29em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#header::before,
+#footer::before,
+#TESTIMONTALS::before {
+    content: '';
+    background: var(--linearGradient);
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+#header .header-content {
+    display: grid;
+    grid-template-columns: 40% 70%;
+    padding: 1em 0;
+}
+#header .box p,
+#footer .footer-box p {
+    display: inline-block;
+    margin-bottom: 1em
+}
+#header .box pre,
+#footer .footer-box pre {
+    display: inline
+}
+#header .box :nth-child(2) {
+    margin-bottom: 2em;
+    margin-top:  1em
+}
+.header-abs {
+    z-index: 1;
+    padding-top: 110px;
+}
+.box-image img {
+    width: 80%;
+    height: 100%;
+    border-radius: .3em;
+}
+.box-image {
+    height: 363px;
+}
+#header i {
+    font-size: 1.6em;
+    margin: 0.2em;
+}
+#header .h1{
+  font-family: 'Roboto Mono',monospace;
+  font-size: 40px;
+  line-height: 42px;
+}
+/*  ----------------End Header---------------- */
+/*  ----------------Start hello---------------- */
+#hello {
+    border-bottom: 1px solid var(--border-botton);
+}
+/*  ----------------end hallo------------ */
+/* ------emplpymeny----------start Resume----------------  */
+.education-text,
+.emplpymeny-text {
+    padding-bottom: 3em;
+    font-size: 17px;
+}
+.bor-left {
+    padding-left: 30px;
+}
+.bor-left::after {
+    content: '';
+    height: 115px;
+    width: 2px;
+    top: 12px;
+    left: 2px;
+}
+.bor-left::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border: 2px solid var(--mainColor);
+    border-radius: 50%;
+    top: 0;
+    left: -4px;
+}
+.border-left {
+    height: 126px;
+}
+.education div:last-child::after,
+.emplpymeny div:last-child::after {
+    height: 85px;
+}
+.general-skils {
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+    margin-bottom: 2em;
+}
+.progres-bar {
+    height: 6px;
+    background-color: var(--bgPrograss);
+    border-radius: 10em;
+    overflow: hidden;
+    margin-top: 1.5em;
+}
+.one::after,
+.tow::after,
+.three::after {
+    content: '';
+    height: 6px;
+}
+.one::after {
+    width: 80%;
+}
+.tow::after {
+    width: 90%;
+}
+.three::after {
+    width: 70%;
+}
+.prograss-list {
+    margin-bottom: 2em;
+    font-size: 0.7em;
+}
+.progr-number {
+    float: right
+}
+/*  ----------------end our work----------------  */
+/*  ----------------start projects---------------- */
+#projects .inform-list li{padding: 0}
+#projects .inform-list li:first-child{
+    width: 5em
+}
+#projects .inform-list li:last-child{
+    width: 11em
+}
+#projects .inform-list li:nth-child(2){
+    width: 10em
+}
+#projects .inform-list li:nth-child(3){
+    width: 8em
+}
+#projects ul li {
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .798888888em;
+}
+.selected {
+    color: var(--mainColor) !important
+}
+.projects-box {
+    grid-template-columns: 45% 50%;
+    border: 1px solid var(--border-botton);
+    grid-gap: 5%;
+    margin: 1em 0 3em 0;
+}
+.project-content {
+    padding: 4em 2em;
+}
+#projects .projects-box .project-content .h4 {
+    color: var(--headingText);
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+#projects .projects-box .project-content .text {
+    line-height: 2;
+    font-size: 13px;
+    color: var(--pragrahpText)
+}
+#projects .projects-box .project-content b {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 1em;
+}
+.project-span {
+    border: 1px solid var(--border-botton);
+    box-shadow: var(--boxShadowCard);
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 0 1em 1em 0;
+    display: inline-block;
+}
+#projects .projects-box .project-content a {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    right: 40px;
+    bottom: 40px;
+}
+/* model*/
+.model,
+.model-one {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.model .project-content,
+.model-one .project-content {
+    width: 50%;
+    margin: 4em auto;
+    background-color: #f6f5f5;
+    padding: 5em;
+    border-radius: 10px;
+}
+.model .project-content .model-h4,
+.model-one .project-content .model-h4 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555566
+}
+.model .project-content .model-project-img img,
+.model-one .project-content .model-project-img img {
+    width: 100%;
+    border-radius: 2px;
+}
+.model .project-content .model-project-img,
+.model-one .project-content .model-project-img ,.model .project-content .model-link,
+.model-one .project-content .model-link {
+    margin: 2em 0;
+}
+.model .project-content .close,
+.model-one .project-content .close,
+.threee {
+    color: #555566;
+    float: right;
+    font-size: 20px;
+    top: -73px;
+    right: -66px;
+}
+.close:hover,
+.close:focus {
+    text-decoration: none;
+}
+/*  ----------------end Contact us---------------- */
+/*  ----------------start carousel---------------*/
+#TESTIMONTALS {
+    height: 400px;
+}
+#TESTIMONTALS .carousel {
+    height: 520px;
+    overflow: hidden;
+}
+#TESTIMONTALS .carousel .slider {
+    height: 100%;
+    width: 400%;
+    display: flex;
+}
+#TESTIMONTALS .carousel .slider section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 2%;
+}
+#TESTIMONTALS .control .arrow {
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+.right {
+    right: 10px;
+}
+.left {
+    left: 10px
+}
+#TESTIMONTALS .control ul li,
+#TESTIMONTALS .control .arrow {
+    color: var(--sliderTextColor);
+}
+#TESTIMONTALS .control ul {
+    list-style: none;
+    display: flex;
+    bottom: 170px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+#TESTIMONTALS .control ul,
+#TESTIMONTALS .control ul li {
+    padding: 0;
+    margin: 0 2px 0 0
+}
+#TESTIMONTALS .control ul li {
+    font-size: 1px;
+    border: 2px solid var(--whiteColor);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%
+}
+#TESTIMONTALS .control ul li.selected {
+    background-color: var(--whiteColor);
+}
+#TESTIMONTALS .carousel-text-litle,
+#TESTIMONTALS .h4 {
+    font-size: 0.8em;
+}
+#TESTIMONTALS .carousel-text-litle {
+    color: var(--sliderTextColor);
+    font-style: italic;
+}
+#TESTIMONTALS .slider .text {
+    font-size: .8em;
+    font-weight: 500;
+}
+.quote {
+    text-align: center;
+    width: 90px;
+    height: 77px;
+    background-color: var(--whiteColor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    top: -30px;
+    right: 47%;
+}
+/*  ----------------end carousel---------------*/
+/*  ----------------start Blog---------------*/
+.Blog-boxs {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+.Blog-boxs .blog-box {
+    border: 1px solid red;
+    border: 1px solid var(--border-botton);
+}
+.blog-content {
+    padding: 1em
+}
+.h5 {
+    margin-bottom: 1em
+}
+.blog-text-litle,
+.blog-text-little {
+    font-size: 0.89em;
+}
+/*  ----------------end Blog---------------*/
+/*  ----------------start Footer---------------- */
+#footer {
+    padding: 70px 0 0 0;
+    height: 630px;
+}
+#footer .h2 {
+    padding-top: 0;
+}
+.footer-boxs {
+    grid-template-columns: 40% 50%;
+    grid-gap: 2%;
+}
+#footer .list-unstyle {
+    margin-top: 1em;
+}
+#footer .list-unstyle li {
+    display: block;
+    padding: 0;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    width: 4.7em;
+}
+.footer-link:hover {
+    background-color: var(--whiteColor);
+    text-decoration: none !important
+}
+.footer-box input,
+.footer-box textarea {
+    width: 25em;
+    height: 3em;
+    border: 1px solid var(--whiteColor);
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 0.2em;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}
+.footer-box input:focus,
+.footer-box textarea:focus {
+    box-shadow: 1px 1px 8px inset, -1px -1px 5px inset;
+}
+.footer-box textarea {
+    height: 6em;
+}
+.footer-box button {
+    width: 60%;
+    box-shadow: 1px 1px 6px #3836368c, -1px -1px 6px #3836368c
+}
+.footer-box form {
+    margin-bottom: 3em
+}
+.footer-text {
+    line-height: 2;
+    letter-spacing: 2px;
+}
+/*  ----------------End Footer---------------- */
+/* class in JQ */
+.white {
+    background-color: var(--whiteColor);
+    color: var(--textColor);
+    box-shadow: 0px 1px 6px var(--textColor);
+}
+.disblayBlock{
+  display: block !important;
+}
+.d-none{
+  display: none;
+}
+/* ALL Classes padding: 70px 0*/
+#hello,
+#projects,
+#Blog {
+    padding: 70px 0;
+}
+/* All CLasses  var(--whiteColor)*/
+ .nav-header li a,#TESTIMONTALS,#TESTIMONTALS .control ul li,
+ #TESTIMONTALS .control .arrow:hover,#TESTIMONTALS .control ul li,#TESTIMONTALS .h4,#footer,#footer .under-line,
+ #footer .h2,
+ .footer-box input,
+ .footer-box textarea,
+ #header .box pre,
+ #header,.close:hover,
+ .close:focus{
+    color: var(--whiteColor)
+}
+/* All CLasses  var(--transtion)*/
+.nav-header,.nav-header li:hover a,#projects ul li,
+.projects-box,
+#projects .projects-box .project-content a,
+.blog-box,.model .project-content,
+.model-one .project-content,.model,
+.model-one,#TESTIMONTALS .carousel .slider,#TESTIMONTALS .control ul li,
+#TESTIMONTALS .control .arrow ,#footer .list-unstyle li {
+    transition: var(--transtion);
+}
+/* All CLasses background var(--mainColor)*/
+.bor-left::after,.one::after,
+.tow::after,
+.three::after {
+    background-color: var(--mainColor);
+}
+/* All CLasses color var(--mainColor)*/
+#projects ul li:hover,
+.selected,#projects .projects-box .project-content a,.quote,.footer-link:hover,.h4 {
+  color: var(--mainColor);
+}
+/* All CLasses var(--boxShadow)*/
+.projects-box:hover,
+.blog-box:hover {
+    box-shadow: var(--boxShadow)
+}
+/* All Classes var(--mainColorHove)*/
+.nav-header li:hover a,.nav-header li:hover::after,
+#projects .inform-list li:hover::after,#header strong,#header i:hover {
+    color: var(--mainColorHove) !important;
+}
+/* All Classes relative*/
+#header,.bor-left,.progres-bar,.project-content,.model .project-content .close,
+.model-one .project-content .close,
+.threee,#TESTIMONTALS,#TESTIMONTALS .carousel,#footer   {
+    position: relative;
+}
+/* All Classes absolute*/
+#header::before,
+#footer::before,
+#TESTIMONTALS::before,.header-abs,.bor-left::after,.bor-left::before,.one::after,
+.tow::after,
+.three::after,#projects .projects-box .project-content a,#TESTIMONTALS .control .arrow,#TESTIMONTALS .control ul,.quote,.footer-abs {
+    position: absolute;
+}
+/* All Classes GRID DISPLAY*/
+.general-skils,.projects-box,.Blog-boxs,.footer-boxs {
+    display: grid;
+}
+/* All Classes cursor pointer*/
+#projects ul li,.projects-box,.project-span,#TESTIMONTALS .control .arrow,#TESTIMONTALS .control ul li,
+#TESTIMONTALS .control .arrow ,.Blog-boxs,#footer .list-unstyle li,.close:hover,
+.close:focus,.under-line:hover,#header i:hover {
+  cursor: pointer;
+}
+/* All Classes 100%*/
+.model,
+.model-one,.progres-bar,#header::before,
+#footer::before,
+#TESTIMONTALS::before,.nav-header,.width-img {
+    width: 100%;
+}

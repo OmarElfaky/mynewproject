@@ -1,0 +1,22 @@
+:root {
+    --mainColor: #4a4a4a;
+    --mainColorHove: #8e80be;
+    --border-botton: #e5e5e5;
+    --headingText: #555555;
+    --textColor: #999;
+    --pragrahpText: #646a6a;
+    --bgPrograss: #e9ecef;
+    --whiteColor: #fff;
+    --sliderTextColor: #c5c5e5;
+    --transtion: all 1s ease-in-out;
+    --boxShadow: 10px 10px 20px #eee, -10px -10px 19px #eee;
+    --boxShadowCard: 3px 3px 7px #eee, -2px -2px 7px #eee;
+    --linearGradient: linear-gradient(54deg,rgba(45,45,45,.95) 34%,rgba(45,45,45,.95));
+}
+#header strong {
+    color: #827e7e !important;
+
+}
+::-webkit-scrollbar-track {
+  background: #827e7e;
+}

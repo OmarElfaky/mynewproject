@@ -1,0 +1,15 @@
+:root {
+    --mainColor: #6d56c1;
+    --mainColorHove: #8e80be;
+    --border-botton: #e5e5e5;
+    --headingText: #555555;
+    --textColor: #999;
+    --pragrahpText: #646a6a;
+    --bgPrograss: #e9ecef;
+    --whiteColor: #fff;
+    --sliderTextColor: #c5c5e5;
+    --transtion: all 1s ease-in-out;
+    --boxShadow: 10px 10px 20px #eee, -10px -10px 19px #eee;
+    --boxShadowCard: 3px 3px 7px #eee, -2px -2px 7px #eee;
+    --linearGradient: linear-gradient(54deg, rgba(74, 76, 179, .95) 34%, hsla(0, 34%, 71%, .95))
+}
