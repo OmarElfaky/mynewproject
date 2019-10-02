@@ -72,7 +72,9 @@
     grid-template-columns: 40% 46%;
     padding: 1em 0;
   }
-  .style-bars{
+}
+@media(min-width:992px){
+   .style-bars{
     display: none !important;
   }
 }
