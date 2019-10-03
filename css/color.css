@@ -13,3 +13,6 @@
     --boxShadowCard: 3px 3px 7px #eee, -2px -2px 7px #eee;
     --linearGradient: linear-gradient(54deg, rgba(74, 76, 179, .95) 34%, hsla(0, 34%, 71%, .95))
 }
+#header strong {
+    color: var(--mainColorHove) !important;
+}
