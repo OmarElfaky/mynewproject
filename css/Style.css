@@ -574,7 +574,7 @@ strong {
 /* All Classes var(--mainColorHove)*/
 .nav-header li:hover a,.nav-header li:hover::after,
 #projects .inform-list li:hover::after,#header strong,#header i:hover {
-    color: var(--mainColorHove) !important;
+    color: var(--mainColorHove);
 }
 /* All Classes relative*/
 #header,.bor-left,.progres-bar,.project-content,.model .project-content .close,
